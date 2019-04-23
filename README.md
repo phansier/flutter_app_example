@@ -1,8 +1,3 @@
 # flutter_app
 
-A new Flutter application.
-
-## Getting Started
-
-For help getting started with Flutter, view our online
-[documentation](https://flutter.io/).
+A demo project for Flutter prototypes presentation on [CoLaboratory: Android Night 2](https://careers.kaspersky.ru/events/colaboratory-android-night-2-bumblebee/)
