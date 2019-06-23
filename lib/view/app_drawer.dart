@@ -13,6 +13,10 @@ class AppDrawer {
       Navigation.goToSellersMode(context);
     }
 
+    void _chatMode() {
+      Navigation.goToChatMode(context);
+    }
+
     String photoUrl = ScopedModel.of<UserModel>(context).firebaseUser.photoUrl;
     String email = ScopedModel.of<UserModel>(context).firebaseUser.email;
 
@@ -38,6 +42,12 @@ class AppDrawer {
             title: Text("Go to Seller's mode"),
             selected: selectedItem == "add_shopping_cart",
             onTap: _sellersMode,
+          ),
+          ListTile(
+            leading: Icon(Icons.chat),
+            title: Text("Chat"),
+            selected: selectedItem == "chat",
+            onTap: _chatMode,
           ),
           AboutListTile(
               icon: Icon(Icons.info_outline),
