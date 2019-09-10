@@ -27,7 +27,7 @@ class UserModel extends Model {
 
   bool _newUser;
 
-  bool get newUser => _newUser!= null && _newUser;
+  bool get newUser => _newUser != null && _newUser;
 
   set newUser(bool value) {
     _newUser = value;

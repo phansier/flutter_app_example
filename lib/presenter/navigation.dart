@@ -16,8 +16,6 @@ class Navigation {
 
   static void goToFlowersScreen(BuildContext context) {
     Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(
-            builder: (context) => FlowersScreen()));
+        context, MaterialPageRoute(builder: (context) => FlowersScreen()));
   }
 }

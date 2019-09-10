@@ -9,7 +9,7 @@ import Flutter
         
         let controller : FlutterViewController = window?.rootViewController as! FlutterViewController
         let testChannel = FlutterMethodChannel(name: "interop_example",
-                                               binaryMessenger: controller)
+                                               binaryMessenger: controller.binaryMessenger)
         testChannel.setMethodCallHandler({
             (call: FlutterMethodCall, result: FlutterResult) -> Void in
             guard call.method == "tryInterop",

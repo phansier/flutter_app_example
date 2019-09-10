@@ -141,16 +141,18 @@ class _LoginButton extends StatelessWidget {
   Future<FirebaseUser> _handleSignIn(String email, String password) async {
     final FirebaseAuth _auth = FirebaseAuth.instance;
 
-    final FirebaseUser user = await _auth.createUserWithEmailAndPassword(
+    AuthResult result = await _auth.createUserWithEmailAndPassword(
         email: email, password: password);
+    final FirebaseUser user = result.user;
     return user;
   }
 
   Future<FirebaseUser> _handleLogin(String email, String password) async {
     final FirebaseAuth _auth = FirebaseAuth.instance;
 
-    final FirebaseUser user = await _auth.signInWithEmailAndPassword(
+    AuthResult result = await _auth.signInWithEmailAndPassword(
         email: email, password: password);
+    final FirebaseUser user = result.user;
     return user;
   }
 }

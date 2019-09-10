@@ -229,19 +229,19 @@ class FlowersScreen extends StatelessWidget {
       height: 80.0,
       point: _getLatLng(bouquet.geopoint),
       builder: (ctx) => new Container(
-            child: new Icon(
-              Icons.local_florist,
-              size: 80.0,
-              color: Color(0xffBB6BD9),
-            ),
-          ),
+        child: new Icon(
+          Icons.local_florist,
+          size: 80.0,
+          color: Color(0xffBB6BD9),
+        ),
+      ),
     ));
 
     if (_mapController.ready) {
       _mapController.move(_getLatLng(bouquet.geopoint), 16.0);
     } else {
-      _mapController.onReady.then(
-          (Null) => _mapController.move(_getLatLng(bouquet.geopoint), 16.0));
+      _mapController.onReady
+          .then((_) => _mapController.move(_getLatLng(bouquet.geopoint), 16.0));
     }
     return _map;
   }

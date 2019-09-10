@@ -1,6 +1,6 @@
 import 'package:scoped_model/scoped_model.dart';
 
-class InteropButtonModel extends Model{
+class InteropButtonModel extends Model {
   String _text = "Order";
 
   String get text => _text;
@@ -9,6 +9,4 @@ class InteropButtonModel extends Model{
     _text = value;
     notifyListeners();
   }
-
-
 }
