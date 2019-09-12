@@ -5,12 +5,7 @@ import 'package:flutter_app/model/bouquets_list.dart';
 import 'package:flutter_app/view/app_drawer.dart';
 import 'package:scoped_model/scoped_model.dart';
 
-class SellersScreen extends StatefulWidget {
-  @override
-  State<StatefulWidget> createState() => new SellersScreenState();
-}
-
-class SellersScreenState extends State<SellersScreen> {
+class SellersScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
