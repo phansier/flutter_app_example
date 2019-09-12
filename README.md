@@ -4,7 +4,7 @@ A demo project for Flutter prototypes presentation on [CoLaboratory: Android Nig
 
 ### You are welcome to ask your questions or suggestions in Issues!
 
-[Video](https://www.youtube.com/watch?v=NjDC2DXh34c)
+[Video](https://youtu.be/NjDC2DXh34c?t=1150)
 
 [Presentation in PDF](Flutter_Prototypes.pdf)
 
