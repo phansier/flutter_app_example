@@ -43,6 +43,7 @@ class AppDrawer {
             selected: selectedItem == "add_shopping_cart",
             onTap: _sellersMode,
           ),
+          if (Theme.of(context).platform == TargetPlatform.iOS)
           ListTile(
             leading: Icon(Icons.chat),
             title: Text("Chat"),

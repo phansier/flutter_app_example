@@ -10,7 +10,7 @@ description: A new Flutter application.
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.0.0-dev.68.0 <3.0.0"
+  sdk: ">=2.3.0 <3.0.0"
 
 dependencies:
   flutter:
@@ -20,15 +20,15 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   #cupertino_icons: ^0.1.2
   #english_words: ^3.1.0
-  flutter_map: ^0.7.2
+  flutter_map: ^0.9.0 # no web
 
-  firebase_auth: ^0.14.0+5
-  cloud_firestore: ^0.12.9+3
-  firebase_database: ^3.0.7
-  firebase_storage: ^3.0.6
-  firebase_messaging: ^5.1.4
+  firebase_auth: ^0.16.1 # web
+  cloud_firestore: ^0.13.6 # web
+  firebase_database: ^3.1.6 # no web
+  firebase_storage: ^3.1.6 # no web
+  firebase_messaging: ^6.0.16 # no web
 
-  scoped_model: ^1.0.1
+  scoped_model: ^1.0.1 # web
 
 dev_dependencies:
   flutter_test:

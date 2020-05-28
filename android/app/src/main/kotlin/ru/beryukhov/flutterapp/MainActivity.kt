@@ -10,7 +10,9 @@ class MainActivity() : FlutterActivity() {
     private val CHANNEL = "interop_example";
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        ...
+        super.onCreate(savedInstanceState)
+
+        GeneratedPluginRegistrant.registerWith(this)
 
         MethodChannel(flutterView, CHANNEL).setMethodCallHandler { call, result ->
             if (call.method == "tryInterop" && call.arguments is List<*> && (call.arguments as List<*>).size==2) {
