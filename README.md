@@ -8,9 +8,15 @@ A demo project for Flutter prototypes presentation on [CoLaboratory: Android Nig
 
 [Presentation in PDF](Flutter_Prototypes.pdf)
 
+### Web version  is now available [here](https://fluber-72ebe.firebaseapp.com)
 
-Sample App screencast GIF
+Login: test@test.ru
+
+Password: testtest
+
+Or you can create an account
+
+
+### Sample App screencast GIF
 
 ![Sample App screencast GIF](Fluber.gif)
-
-
